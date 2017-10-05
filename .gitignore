@@ -1,0 +1,4 @@
+packages/
+EF_SQLite_Test/obj/
+EF_SQLite_Test/bin/
+.vs/EF_SQLite_Test/v15/sqlite3/
