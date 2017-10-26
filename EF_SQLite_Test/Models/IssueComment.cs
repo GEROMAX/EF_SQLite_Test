@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace EF_SQLite_Test.Models
 {
-    public class IssueComment
+    public class IssueComment : EntityBase
     {
         [Key]
         [Index("HeightAndWeight", 1)]
@@ -21,7 +21,7 @@ namespace EF_SQLite_Test.Models
         [Column(Order = 1)]
         public decimal CommentId { get; set; }
         [Required]
-        [MaxByte(10)]
+        [EfMaxByte(10)]
         public string Comment { get; set; }
     }
 }

@@ -15,7 +15,7 @@ namespace EF_SQLite_Test.Models
         Complete
     }
 
-    public class Issue
+    public class Issue : EntityBase
     {
         [Index(IsUnique= true)]  
         public int Id { get; set; }

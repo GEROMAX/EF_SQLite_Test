@@ -40,7 +40,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(187, 29);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Create Table by Code First";
+            this.button1.Text = "Create Data";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

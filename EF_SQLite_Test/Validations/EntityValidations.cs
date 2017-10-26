@@ -26,10 +26,10 @@ namespace EF_SQLite_Test.Validations
 
         private void ValidateMaxByte(object entity, PropertyInfo[] propertyInfos, DbEntityValidationResult result)
         {
-            MaxByteAttribute attrMBVA = null;
+            EfMaxByteAttribute attrMBVA = null;
             var query = propertyInfos.Where(pi =>
             {
-                var attr = (MaxByteAttribute[])pi.GetCustomAttributes(typeof(MaxByteAttribute), true);
+                var attr = (EfMaxByteAttribute[])pi.GetCustomAttributes(typeof(EfMaxByteAttribute), true);
                 if (attr.Length > 0)
                 {
                     attrMBVA = attr[0];

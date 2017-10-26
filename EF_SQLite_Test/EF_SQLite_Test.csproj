@@ -119,10 +119,15 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\SqliteCommandBuilder.cs" />
     <Compile Include="Migrations\SqliteMigrationSqlGenerator.cs" />
+    <Compile Include="Models\EntityBase.cs" />
+    <Compile Include="Utils\ViewManager.cs" />
+    <Compile Include="Utils\ViewManagerItem.cs" />
     <Compile Include="Validations\EntityValidations.cs" />
     <Compile Include="Models\Issue.cs" />
     <Compile Include="Models\IssueComment.cs" />
-    <Compile Include="Validations\MaxByteValidationAttribute.cs" />
+    <Compile Include="Validations\EfRangeAttribute.cs" />
+    <Compile Include="Validations\EfRequiredAttribute.cs" />
+    <Compile Include="Validations\EfMaxByteValidationAttribute.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -167,6 +172,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.105.2\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.105.2\build\net46\System.Data.SQLite.Core.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
